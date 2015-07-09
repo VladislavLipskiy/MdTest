@@ -5,7 +5,9 @@ This document describes JavaScript interface which should be implemented in Leba
 ## Native part ##
 Java binding object must implement a method with the following signature:
 
-```public void onWebEvent(String event, String eventArgs)```
+```java
+public void onWebEvent(String event, String eventArgs)
+```
 where ```event``` is an event name and ```eventArgs``` is a JSON string. 
 
 Java binding object must be registered in ```WebView``` using the [```addJavascriptInterface```](http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object, java.lang.String)) with ```"LebaraJavascriptInterface"``` name.
