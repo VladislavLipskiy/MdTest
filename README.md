@@ -6,7 +6,7 @@ This document describes JavaScript interface which should be implemented in Leba
 Java binding object must implement a method with the following signature:
 
 ```java
-public void onWebEvent(String event, String eventArgs)
+public void onWebEvent(String event, String eventArgs);
 ```
 where ```event``` is an event name and ```eventArgs``` is a JSON string. 
 
